@@ -9,6 +9,7 @@ import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import CreateIcon from '@mui/icons-material/Create';
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 const Sidebar2 = () => {
     const theme = useTheme();
@@ -24,12 +25,17 @@ const Sidebar2 = () => {
         <Menu
           menuItemStyles={{
             button: {
-                color: colors.primary[700],   
+                color: colors.primary[800], 
+                '&:hover': {
+                  backgroundColor: colors.primary[700],
+                  color: colors.primary[300]
+              },  
             },
           }}
           
+          
         >
-            <MenuItem icon={<HomeRoundedIcon/>} component={<Link to="/home" />} onClick={() => setCollapsed(!collapsed)}>Home</MenuItem>
+            <MenuItem icon={<HomeRoundedIcon/>} component={<Link to="/" />} onClick={() => setCollapsed(!collapsed)}>Home</MenuItem>
             <MenuItem icon={<ConstructionIcon/>} component={<Link to="/projects" />}> Projects</MenuItem>
             <MenuItem icon={<CodeRoundedIcon/>} component={<Link to="/skills" />}> Skills</MenuItem>
             <MenuItem icon={<CreateIcon/>} component={<Link to="/blog" />}> Blog</MenuItem> 

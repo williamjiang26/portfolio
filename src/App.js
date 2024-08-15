@@ -8,6 +8,7 @@ import Skills from "./scenes/skills";
 import Blog from "./scenes/blog";
 import Contact from "./scenes/contact";
 import Home from './scenes/home';
+import Blog1 from "./scenes/blog/articles/8.15";
 
 function App() {
   const [theme, colorMode] = useMode()
@@ -20,11 +21,12 @@ function App() {
           <main className="content">
             <Topbar/>
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/blog1" element={<Blog1 />} />
             </Routes>
           </main>
         </div>

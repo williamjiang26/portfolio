@@ -10,7 +10,7 @@ const Home = () => {
     <Box
         m='20px'
     >
-        <Header title='Hi, I am William Jiang' subtitle='Systems Engineer, Solutions Architect, Software Engineer' />
+        <Header title="Hi, I'm William," subtitle='Systems Engineer, Solutions Architect, Software Engineer' />
         
     </Box>)
 }
