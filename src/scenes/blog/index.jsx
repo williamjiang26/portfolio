@@ -22,7 +22,7 @@ const Blog = () => {
         <Box m='20px'>
             <Header title='Blog' subtitle='A place where I write about topics including small business, personal finance, investing in stocks and real estate,
                 budgeting and saving, tech industry news, and more.'/>
-            <Box m='20px'>
+            <Box m='20px' >
              <Article link='/blog1' text='article1'/>   
             </Box>
             

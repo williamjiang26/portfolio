@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import {ColorModeContext, useMode} from './theme';
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { colors, CssBaseline, ThemeProvider } from "@mui/material";
 import Sidebar2 from "./scenes/global/Sidebar";
 import Topbar from "./scenes/global/Topbar";
 import Projects from "./scenes/projects";
@@ -18,7 +18,7 @@ function App() {
         <CssBaseline/>
         <div className="app">
           <Sidebar2/>
-          <main className="content">
+          <main className="content" >
             <Topbar/>
             <Routes>
               <Route path="/" element={<Home />} />

@@ -19,16 +19,16 @@ const Sidebar2 = () => {
     <Sidebar
         collapsed={collapsed}
         image=''
-        backgroundColor= {colors.primary[100]}
+        backgroundColor= {colors.primary[900]}
         width="175px"
     >
         <Menu
           menuItemStyles={{
             button: {
-                color: colors.primary[800], 
+                color: colors.redAccent[400], 
                 '&:hover': {
-                  backgroundColor: colors.primary[700],
-                  color: colors.primary[300]
+                  backgroundColor: colors.primary[100],
+                  color: colors.primary[900]
               },  
             },
           }}
