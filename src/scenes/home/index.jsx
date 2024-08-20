@@ -9,9 +9,10 @@ const Home = () => {
     return (
     <Box
         m='20px'
+        sx={{textAlign: 'center'}}
     >
         <Header title="Hi, I'm William," subtitle='Systems Engineer, Solutions Architect, Software Engineer' />
-        
+        AWS, GCP, Kubernetes, React, Spring, Python, C, Node
     </Box>)
 }
 

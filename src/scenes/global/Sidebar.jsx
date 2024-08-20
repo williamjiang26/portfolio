@@ -25,10 +25,10 @@ const Sidebar2 = () => {
         <Menu
           menuItemStyles={{
             button: {
-                color: colors.redAccent[400], 
+                color: colors.primary[100], 
                 '&:hover': {
-                  backgroundColor: colors.primary[100],
-                  color: colors.primary[900]
+                  backgroundColor: colors.redAccent[400],
+                  color: colors.primary[500]
               },  
             },
           }}
@@ -37,7 +37,6 @@ const Sidebar2 = () => {
         >
             <MenuItem icon={<HomeRoundedIcon/>} component={<Link to="/" />} onClick={() => setCollapsed(!collapsed)}>Home</MenuItem>
             <MenuItem icon={<ConstructionIcon/>} component={<Link to="/projects" />}> Projects</MenuItem>
-            <MenuItem icon={<CodeRoundedIcon/>} component={<Link to="/skills" />}> Skills</MenuItem>
             <MenuItem icon={<CreateIcon/>} component={<Link to="/blog" />}> Blog</MenuItem> 
             <MenuItem icon={<ContactsOutlinedIcon/>} component={<Link to="/contact" />}> Contact</MenuItem> 
         </Menu>
